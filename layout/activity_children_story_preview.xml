@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChildrenStories.ChildrenStoryPreview">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:fitsSystemWindows="true">
+
+        <Toolbar
+                android:id="@+id/stories_preview_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+            <include
+                    layout="@layout/children_stories_custom_menu"
+                    android:id="@+id/custom_menu_all_layers"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+            </include>
+
+            <SeekBar
+                    android:id="@+id/brightness_seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:theme="@style/childrenStoriesTheme"
+                    android:visibility="gone"/>
+
+        </Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/image_view_children_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_children_stories_preview"
+                    android:src="@drawable/homar_bolbol1"
+                    android:scaleType="fitXY"/>
+
+            <TextView
+                    android:id="@+id/txt_children_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:padding="@dimen/txt_children_stories_preview_padding"
+                    android:textSize="@dimen/txt_children_stories_preview_size_normal"
+                    android:background="@color/white"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

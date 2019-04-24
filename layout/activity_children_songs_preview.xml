@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChildrenSongs.ChildrenSongsPreview">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal|bottom">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/myplayer_linearlayout_margin_horz"
+            android:gravity="center_horizontal|bottom">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myplayer_imgview_dimns"
+                android:src="@drawable/music"
+                android:layout_marginBottom="@dimen/myplayer_imgview_marginbotom"/>
+
+        <TextView
+                android:id="@+id/txt_song_name_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/myplayer_txtview_name_paddinghorz"
+                android:layout_marginBottom="@dimen/myplayer_txtview_name_marginbottom"
+                android:text="ماما زمانها جاية"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/myplayer_txtview_name_size"
+                android:textColor="@color/white"
+                android:background="@color/grey"
+                android:alpha="0.5"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/txt_playing_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.15"/>
+
+            <SeekBar
+                    android:id="@+id/songs_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"/>
+
+            <TextView
+                    android:id="@+id/txt_song_duration"
+                    android:text="00:00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.15"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@color/grey"
+            android:weightSum="2"
+            android:paddingVertical="@dimen/myplayer_linearlayout_padding_vir"
+            app:layout_constraintBottom_toBottomOf="@+id/songs_seekbar">
+
+        <ImageView
+                android:id="@+id/btn_stop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/myplayer_ic_stop_height"
+                android:src="@drawable/ic_stop"/>
+
+        <ImageView
+                android:id="@+id/btn_play"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/myplayer_ic_play_height"
+                android:src="@drawable/ic_play"/>
+
+        <ImageView
+                android:id="@+id/btn_pause"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/myplayer_ic_pause_height"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pause"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

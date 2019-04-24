@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/children_stories_list_cardview_margin">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@drawable/white_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/children_stories_list_linearlayout_marginbottom">
+
+        <ImageView
+                android:layout_weight="3.5"
+                android:id="@+id/imageViewChildrenStories"
+                android:layout_height="120dp"
+                android:layout_width="0dp"
+                android:background="@drawable/homar_bolbol1"
+                android:scaleType="fitXY"
+                android:layout_marginVertical="@dimen/children_stories_list_imageview_marginvirt"/>
+
+        <LinearLayout
+                android:layout_weight="6.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+
+                    android:id="@+id/txtStoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الحمار والبلبل"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/namefont2"
+                    android:textSize="@dimen/children_stories_list_txt_name_size"
+                    android:paddingEnd="@dimen/children_stories_list_txt_name_padding_end"
+                    android:paddingTop="@dimen/children_stories_list_txt_name_padding_top"/>
+
+            <TextView
+                    android:id="@+id/txtStoryDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/children_stories_list_txt_desc_size"
+                    android:paddingHorizontal="@dimen/children_stories_list_txt_desc_padding_horz"
+                    android:text="قصة الحمار والبلبل قصة تحكي عن احترام الكبير والعطف على"/>
+
+        </LinearLayout>
+
+        <View
+                android:layout_weight="0.2"
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/children_stories_list_view_height"
+                android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Main.MainActivity"
+        tools:showIn="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+            android:layout_marginTop="@dimen/nav_linearlayout_margintop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/btn_children_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_children_stories"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_main_text_size"
+                android:layout_marginHorizontal="@dimen/btn_main_margin_horizontal"
+                android:layout_marginVertical="@dimen/btn_main_margen_vertical"
+                android:background="@drawable/orange_btn"/>
+
+        <Button
+                android:id="@+id/btn_abla_fadela_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_adult_stories"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_main_text_size"
+                android:layout_marginHorizontal="@dimen/btn_main_margin_horizontal"
+                android:layout_marginVertical="@dimen/btn_main_margen_vertical"
+                android:background="@drawable/orange_btn"/>
+
+        <Button
+                android:id="@+id/btn_children_songs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_children_songs"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/btn_main_text_size"
+                android:layout_marginHorizontal="@dimen/btn_main_margin_horizontal"
+                android:layout_marginVertical="@dimen/btn_main_margen_vertical"
+                android:background="@drawable/white_btn"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

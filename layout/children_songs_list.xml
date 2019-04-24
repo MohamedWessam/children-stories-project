@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/children_stories_list_cardview_margin">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:background="@drawable/white_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="@dimen/children_songs_linearlayout_paddinghorz"
+            android:layout_marginBottom="@dimen/children_stories_list_linearlayout_marginbottom">
+
+        <ImageView
+                android:id="@+id/imageViewChildrenSongs"
+                android:layout_height="@dimen/children_songs_list_imgview_size"
+                android:layout_width="@dimen/children_songs_list_imgview_size"
+                android:src="@drawable/music2"
+                android:scaleType="fitXY"
+                android:layout_marginVertical="@dimen/children_songs_list_imgview_marginvir"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/txt_song_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الحمار والبلبل"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/namefont2"
+                    android:textSize="@dimen/children_songs_list_txtview_size"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
